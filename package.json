@@ -1,0 +1,23 @@
+{
+    "name": "arrayiterator-js-helper",
+    "version": "1.0.3",
+    "description": "Helper to help easier code & validate JS code.",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "main": "index.js",
+    "keywords": [
+        "react",
+        "array",
+        "iterator"
+    ],
+    "type": "module",
+    "author": {
+        "name": "ArrayIterator",
+        "email": "me@arrayiterator.com",
+        "url": "https://www.arrayiterator.com/"
+    },
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {}
+}
