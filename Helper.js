@@ -87,7 +87,7 @@ export const is_async_function = (e) => !!(is_function(e) && e.constructor.name 
 export const is_arrow_function = (e) => !!(is_function(e) && !e.name && e.toString().includes('=>') && !is_normal_function(e));
 export const is_normal_function = (e) => !!(is_function(e) && e.prototype && e.prototype.constructor && e.toString().toLowerCase().startsWith('function'));
 export const is_native_function = (e) => is_normal_function(e) && /\)\s*{\s+\[native\s+code]\s*}$/g.test(e.toString());
-export const is_number = (e) => !!(typeof e === 'number' && !isNaN(e) && e !== isFinite(e));
+export const is_number = (e) => !!(typeof e === 'number' && !isNaN(e) && isFinite(e));
 export const is_numeric = (e) => is_number(e) || !!(is_string(e) && is_match(/^[0-9]+(\.[0-9]+)?$/, e));
 export const is_nan = (e) => typeof e === "number" && isNaN(e);
 export const is_finite = (e) => typeof e === "number" && e !== 0 && isFinite(e);
